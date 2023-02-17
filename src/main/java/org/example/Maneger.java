@@ -8,7 +8,7 @@ public class Maneger {
         this.limit = 10;
     }
 
-    public Maneger (int limit) {
+    public Maneger(int limit) {
         this.limit = limit;
     }
 

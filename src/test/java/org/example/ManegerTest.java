@@ -23,8 +23,9 @@ public class ManegerTest {
 
         String[] expectid = {"1film", "2film", "3film", "4film", "5film", "6film", "7film", "8film", "9film", "10film", "11film"};
         String[] actual = add.findAll();
-        Assertions.assertArrayEquals(expectid,actual);
+        Assertions.assertArrayEquals(expectid, actual);
     }
+
     @Test
     public void test2() {
         Maneger add = new Maneger();
@@ -41,10 +42,11 @@ public class ManegerTest {
         add.addFilm("11film");
 
 
-        String[] expectid = { "11film","10film","9film","8film", "7film","6film", "5film", "4film", "3film","2film"};
+        String[] expectid = {"11film", "10film", "9film", "8film", "7film", "6film", "5film", "4film", "3film", "2film"};
         String[] actual = add.findLast();
         Assertions.assertArrayEquals(expectid, actual);
     }
+
     @Test
     public void test3() {
         Maneger add = new Maneger();
@@ -54,7 +56,7 @@ public class ManegerTest {
         add.addFilm("4film");
 
 
-        String[] expectid = {"4film", "3film", "2film","1film" };
+        String[] expectid = {"4film", "3film", "2film", "1film"};
         String[] actual = add.findLast();
         Assertions.assertArrayEquals(expectid, actual);
     }
